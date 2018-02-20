@@ -304,7 +304,7 @@ function generateColors(count:number):Array<number[]> {
  * @param count
  * @returns {Color}
  */
-function getColors(chartType:string, index:number, count:number):Color {
+function getColors(chartType:string, index:number, count:number):any {
   if (chartType === 'pie' || chartType === 'doughnut') {
     return formatPieColors(generateColors(count));
   }
